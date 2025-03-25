@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+body {
+    @apply bg-gray-900 flex justify-center items-center;
+    font-family: 'Roboto', sans-serif;
+}
