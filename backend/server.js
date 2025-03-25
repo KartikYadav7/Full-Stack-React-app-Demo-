@@ -6,14 +6,13 @@ const connectdb = require('./config/db');
 
 const app = express();
 
-app.use(express.json());
 app.use(cors({
   origin: ['https://full-stack-react-app-demo-frontend.vercel.app'],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE']
 }));
 
-
+app.use(express.json());
 connectdb()
 app.get('/',(req,res)=>{
   res.send('Hello World')
